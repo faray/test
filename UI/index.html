@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Farayola Timileyin Emmanuel">
+    <meta name="description" content="Ride-My-Way App is a carpooling application that provides drivers with the ability to create ride offers and passengers to join available ride offers.">
+    <meta name="keywords" content="carpooling;ride;trip;">
+    <title>Home | RMW</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+        <header id="myTopnav" class="topnav">
+            <div class="container">
+                <div id="brand_name">
+                    <img src="./assets/img/traffic-jam.png" height="50px" width="60px" alt="">
+                    <p><b>RideMyWay</b></p>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa fa-bell" aria-hidden="true"><span><sup><b>2</b></sup></span></i></a>
+                        </li>
+                        <li>
+                            <i class="fa fa-user" aria-hidden="true"><span>Welcome, <a href="">Faray</a></span></i>
+                        </li>
+                        <li>
+                            <button class="btn default">Login</button>
+                        </li>
+                        <li>
+                            <button class="btn default">SignUp</button>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" style="font-size:15px;" class="m-icon" onclick="minimiseBtn()">&#9776;</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section id="showcase">
+            <div class="showcase-container">
+                <h4>LOOKING FOR A RIDE?</h4>
+                <p>YOU'VE COME TO THE RIGHT PLACE</p>
+            </div>
+            <div id="showcase-search">
+               <form>
+                <input type="text" name="" id="" required placeholder="From e.g Ikeja">
+                <input type="text" name="" id="" required placeholder="Destination e.g Illupeju">
+                <input type="date" name="" id="" placeholder="Date">
+                <input type="time" name="" id="" placeholder="Time">
+                <button class="default">Search</button>
+               </form>
+            </div>
+        </section>
+
+        <section class="showcase-container">
+            <p>Rides Around You</p>
+            <div class="box-container">
+                <div>
+                    <div class="box">
+                        <img src="./assets/img/city_bg.jpg" alt="food-image">
+                        <p style="font-style: normal;font-weight: normal;line-height: normal;font-size: 18px;text-transform: capitalize">Rica rome</p>
+                        <p>Lompora, odio maxime repellat?</p>
+                        <div class="price-holder">
+                            <p>₦500</p>
+                            <p class="old-price">₦700</p>
+                        </div>
+                        <button class="btn default">ORDER NOW</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button class="float"><i class="fa fa-plus my-float"></i></button>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
