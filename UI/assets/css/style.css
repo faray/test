@@ -275,8 +275,7 @@ header a:hover{
 }
 
 .box-container{
-    margin-top: 30px;
-    margin-left: 15px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
