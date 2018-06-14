@@ -2,7 +2,7 @@ body{
     font: 15px/1.5 Junge, Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #CCC;
+    background-color: lightgoldenrodyellow;
 }
 
 .container{
@@ -11,7 +11,11 @@ body{
     overflow: hidden;
 }
 
-input[type=text],input[type=date],input[type=time], input[type=number], input[type=password], textarea {
+.caret:hover {
+    color: black;
+}
+
+input[type=text], input[type=tel], input[type=email],input[type=date],input[type=time], input[type=number], input[type=password], textarea {
     width: 100px;
     padding: 12px;
     border: 3px solid darkgray;
@@ -103,7 +107,7 @@ header .highlight, header .current a{
 }
 
 header a:hover{
-    color: #e8419d;
+    color: black;
     font-weight: bold;
 }
 
@@ -122,6 +126,10 @@ header a:hover{
 
 .showcase-container {
     overflow: hidden;
+}
+
+#rmw-section {
+    
 }
 
 #showcase-search {
@@ -181,10 +189,6 @@ header a:hover{
     color: white;
 }
 
-#ride-desc-text {
-    width: 300px;
-}
-
 .rides-showcase {
     min-height: 700px;
     background: gray;
@@ -207,10 +211,6 @@ header a:hover{
 
 #rmw-offers div img{
 	border-radius: 80px;
-}
-
-.rmw-offers-heading {
-	display: inline;
 }
 
 .rmw-offers-heading a {
@@ -249,6 +249,10 @@ header a:hover{
     display: none;
 }
 
+#signup-modal {
+    display: none;
+}
+
 #username-text {
     width: auto;
 }
@@ -272,10 +276,10 @@ header a:hover{
 
 .box-container{
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 15px;
+    grid-gap: 5px;
 }
 
 .box-container .box{

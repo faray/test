@@ -18,7 +18,7 @@
         <header id="myTopnav" class="topnav">
             <div class="container">
                 <div id="brand_name">
-                    <img src="./assets/img/traffic-jam.png" height="50px" width="60px" alt="">
+                    <img src="./assets/img/traffic-jam.png" height="50px" width="30px" alt="">
                     <p><b>RideMyWay</b></p>
                 </div>
                 <nav>
@@ -27,7 +27,7 @@
                             <a href=""><i class="fa fa-bell" aria-hidden="true"><span><sup><b>2</b></sup></span></i></a>
                         </li>
                         <li>
-                            <span>dashboard &DoubleRightArrow;</span>
+                            <span class="caret">dashboard <i class="fa fa-caret-down"></i> </span>
                         </li>
                         <li>
                             <i class="fa fa-user" aria-hidden="true"><span><a href="">Faray</a></span></i>
@@ -36,7 +36,7 @@
                             <button id="loginBtn">Login</button>
                         </li>
                         <li>
-                            <button>SignUp</button>
+                            <button id="signUpBtn">SignUp</button>
                         </li>
                         <li>
                             <a href="javascript:void(0);" style="font-size:15px;" class="m-icon" onclick="minimiseBtn()"><i class="fa fa-bars"></i></a>
@@ -92,10 +92,7 @@
        </section>
        
         <section class="showcase-container">
-            <div class="rmw-offers-heading">
-               <h3>All Ride Offers</h3>
-               <a href=""><h3> View on map </h3></a>
-            </div>
+            <h3>All Ride Offers</h3>
             <p>see promising ride offers below</p>
             <div class="box-container">
                 <div>
@@ -164,10 +161,7 @@
         </section>
 
         <section class="showcase-container">
-            <div class="rmw-offers-heading">
-               <h3>Latest Ride Offers</h3>
-               <a href=""><h3> View on map </h3></a>
-            </div>
+            <h3>Latest Ride Offers</h3>
             <p>see promising ride offers below</p>
             <div class="box-container">
                 <div>
@@ -235,11 +229,8 @@
             </div>
         </section>
 
-        <section class="showcase-container">
-            <div class="rmw-offers-heading">
-               <h3>Cheap Ride Offers</h3>
-               <a href=""><h3> View on map </h3></a>
-            </div>
+        <section class="showcase-container" id="rwm-section">
+            <h3>Cheap Ride Offers</h3>
             <p>see promising ride offers below</p>
             <div class="box-container">
                 <div>
@@ -317,31 +308,62 @@
 
        <div class="modal-content" id="add-ride-modal">
             <span class="close">&times;</span>
-                <h2>Offer A Ride | RMW </h2>
+                <h2>OFFER A RIDE | RMW </h2>
                 <form class="modal-form">
-                    <input type="text" name="" id="ride-desc-text" required placeholder="Title of ride">
-                    <textarea name="" id="" cols="30" rows="10" required placeholder="Ride Description"></textarea>
+                    <input type="text" name="" id="username-text" required placeholder="Title of ride">
+                    <textarea name="" id="username-text" cols="30" rows="10" required placeholder="Ride Description"></textarea>
                     <input type="file" name="" id="" placeholder="Ride Image">
-                    <p>Ride Details</p>
+                    <p><b>Ride Details</b></p>
                     <div>
                         <input type="text" name="" id="" required placeholder="Place of Departure">
                         <input type="text" name="" id="" required placeholder="Destination">
                         <input type="date" name="" id="" required placeholder="Date of Departure">
                         <input type="time" name="" id="" required placeholder="Time of Departure">
                     </div>
-                    <p>Car Information</p>
+                    <p><b>Car Information</b></p>
                     <div>
                         <input type="text" name="" class="car-text" required placeholder="Car Name">
                         <input type="text" name="" class="car-text" required placeholder="Car Number Plate">
                         <input type="number" name="" class="car-text" required placeholder="Car Capacity">
                     </div>
-                    <button type="submit">Offer Ride</button>
+                    <button type="submit"><b>OFFER RIDE</b></button>
                 </form>
        </div>
 
+       <div class="modal-content" id="signup-modal">
+            <span class="close">&times;</span>
+                <h2>SIGN UP | RMW </h2>
+                <form class="modal-form">
+                    <input type="text" name="" id="username-text" required placeholder="Full Name">
+                    <div>
+                        <input type="text" name="" id="username-text" required placeholder="Username">
+                        <input type="email" name="" id="username-text" required placeholder="email">
+                    </div>
+                    <div>
+                        <input type="text" name="" id="username-text" placeholder="Address">
+                        <input type="tel" name="" id="username-text" required placeholder="Phone Number">
+                    </div>
+                    <div>
+                        <input type="password" name="" id="username-text" required placeholder="Password">
+                        <input type="password" name="" id="username-text" required placeholder="Retype Password">
+                    </div>
+                    <p><b>Upload Your Recent Picture :</b></p>
+                    <input type="file" name="" id="" required placeholder="Profile Image">
+                    <p><b>Upload valid Government issued ID :</b></p>
+                    <input type="file" name="" id="" required placeholder="identiy-card">
+                    <p><b>Account Type</b></p>
+                    <div>
+                        <input type="radio" name="userRole" id="" value="Driver" required> Driver
+                        <input type="radio" name="userRole" id="" value="Passenger" required checked> Rider
+                    </div>
+                    <button type="submit">SIGN UP</button>
+                </form>
+       </div>
+
+
        <div class="modal-content" id="login-modal">
             <span class="close">&times;</span>
-                <h2>Login | RMW </h2>
+                <h2>LOGIN | RMW </h2>
                 <form class="modal-form">
                     <input type="text" id="username-text" required placeholder="username or email">
                     <input type="password" id="password-text" required placeholder="password">
@@ -349,7 +371,7 @@
                         <input type="radio" name="userRole" id="" value="Driver" required> Driver
                         <input type="radio" name="userRole" id="" value="Passenger" required checked> Rider
                     </div>
-                    <button type="submit">Login</button>
+                    <button type="submit"><b>LOGIN</b></button>
                 </form>
        </div>
 
