@@ -33,13 +33,13 @@
                             <i class="fa fa-user" aria-hidden="true"><span><a href="">Faray</a></span></i>
                         </li>
                         <li>
-                            <button>Login</button>
+                            <button id="loginBtn">Login</button>
                         </li>
                         <li>
                             <button>SignUp</button>
                         </li>
                         <li>
-                            <a href="javascript:void(0);" style="font-size:15px;" class="m-icon" onclick="minimiseBtn()"><i class="fa fa-bar"></i></a>
+                            <a href="javascript:void(0);" style="font-size:15px;" class="m-icon" onclick="minimiseBtn()"><i class="fa fa-bars"></i></a>
                         </li>
                     </ul>
                 </nav>
@@ -317,7 +317,7 @@
 
        <div class="modal-content" id="add-ride-modal">
             <span class="close">&times;</span>
-                <h2>Offer A Ride</h2>
+                <h2>Offer A Ride | RMW </h2>
                 <form class="modal-form">
                     <input type="text" name="" id="ride-desc-text" required placeholder="Title of ride">
                     <textarea name="" id="" cols="30" rows="10" required placeholder="Ride Description"></textarea>
@@ -338,6 +338,21 @@
                     <button type="submit">Offer Ride</button>
                 </form>
        </div>
+
+       <div class="modal-content" id="login-modal">
+            <span class="close">&times;</span>
+                <h2>Login | RMW </h2>
+                <form class="modal-form">
+                    <input type="text" id="username-text" required placeholder="username or email">
+                    <input type="password" id="password-text" required placeholder="password">
+                    <div>
+                        <input type="radio" name="userRole" id="" value="Driver" required> Driver
+                        <input type="radio" name="userRole" id="" value="Passenger" required checked> Rider
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+       </div>
+
 
     <script src="./assets/js/main.js"></script>
 </body>
